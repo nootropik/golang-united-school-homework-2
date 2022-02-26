@@ -21,7 +21,7 @@ const (
 func CalcSquare(sideLen float64, sidesNum side) float64 {
 	switch sidesNum {
 	case 3:
-		return math.Sqrt(3) / 4 * (sidesNum * sidesNum)
+		return math.Pow(sideLen, 2) * math.Sqrt(3) / 4
 	case 4:
 		return sideLen * sideLen
 	case 0:
@@ -29,5 +29,4 @@ func CalcSquare(sideLen float64, sidesNum side) float64 {
 	default:
 		return 0
 	}
-	return
 }
