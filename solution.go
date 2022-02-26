@@ -9,4 +9,12 @@ package square
 // CalcSquare(10.0, SidesCircle)
 
 func CalcSquare(sideLen float64, sidesNum #yourTypeNameHere#) float64 {
+	var sidesNum int
+	const (
+		SidesTriangle=3
+		SidesSquare=4
+		SidesCircle=0
+		Pi=3.14
+	)
+	
 }
