@@ -18,6 +18,14 @@ const (
 )
 
 func CalcSquare(sideLen float64, sidesNum side) float64 {
-
-	return 0
+	switch sidesNum {
+	case 3:
+		CalcSquare(3, SidesTriangle)
+	case 4:
+		CalcSquare(4, SidesSquare)
+	case 0:
+		CalcSquare(2, SidesCircle)
+	default
+		return 0
+	}
 }
