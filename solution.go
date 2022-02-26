@@ -8,13 +8,16 @@ package square
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-func CalcSquare(sideLen float64, sidesNum #yourTypeNameHere#) float64 {
-	var sidesNum int
-	const (
-		SidesTriangle=3
-		SidesSquare=4
-		SidesCircle=0
-		Pi=3.14
-	)
-	
+type side int
+
+const (
+	SidesTriangle side = 3
+	SidesSquare   side = 4
+	SidesCircle   side = 0
+	Pi                 = 3.14
+)
+
+func CalcSquare(sideLen float64, sidesNum side) float64 {
+
+	return 0
 }
