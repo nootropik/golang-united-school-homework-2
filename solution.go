@@ -25,7 +25,7 @@ func CalcSquare(sideLen float64, sidesNum side) float64 {
 		CalcSquare(4, SidesSquare)
 	case 0:
 		CalcSquare(2, SidesCircle)
-	default
+	default:
 		return 0
 	}
 }
