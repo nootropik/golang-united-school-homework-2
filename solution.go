@@ -7,6 +7,7 @@ package square
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
+import "math"
 
 type side int
 
@@ -20,12 +21,13 @@ const (
 func CalcSquare(sideLen float64, sidesNum side) float64 {
 	switch sidesNum {
 	case 3:
-		CalcSquare(3, SidesTriangle)
+		return math.Sqrt(3) / 4 * math.Pow(sidesNum, 2)
 	case 4:
-		CalcSquare(4, SidesSquare)
+		return sideLen * sideLen
 	case 0:
-		CalcSquare(2, SidesCircle)
+		return Pi * math.Pow(sideLen, 2)
 	default:
 		return 0
 	}
+	return
 }
